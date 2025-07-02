@@ -1,0 +1,135 @@
+.about-section {
+  padding: 5rem 2rem;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.about-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: rgb(107, 97, 85);
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.about-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Image container */
+.about-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image {
+ 
+  max-height: 500px;   /* Increase height as needed */
+  width: auto;
+  border-radius: 17px;
+  box-shadow: 0 4px 12px rgba(38, 37, 37, 0.15);
+  margin: 1.5rem;
+  margin-bottom: 3rem;
+  object-fit: cover;
+
+
+}
+
+/* Text */
+.about-text-container {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.about-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+  text-align: justify;
+}
+.contact-link {
+  color: #555;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.contact-link:hover {
+  color: #000;
+}
+/* Divider */
+.about-finishing-line {
+  height: 1px;
+  width: 95%;
+  background-color: #000;
+  margin: 4rem auto 0 auto;
+  opacity: 0.6;
+}
+
+/* Layout for desktop: side by side */
+@media (min-width: 768px) {
+  .about-container {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+
+  .about-image-container {
+    order: 2;
+  }
+
+  .about-text-container {
+    order: 1;
+  }
+}
+
+/* Animation base */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Delay classes for staggered animation */
+.delay-1 {
+  transition-delay: 1s;
+}
+.delay-2 {
+  transition-delay: 2s;
+}
+.delay-3 {
+  transition-delay: 3s;
+}
+.delay-4 {
+  transition-delay: 4s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

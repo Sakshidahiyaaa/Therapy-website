@@ -1,4 +1,10 @@
+
 @import "tailwindcss";
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
 :root {
   --background: #ffffff;
@@ -23,4 +29,17 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 👇 Scroll-triggered animation (global) */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
