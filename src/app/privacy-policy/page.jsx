@@ -37,7 +37,7 @@ const PrivacyPolicy = () => {
             If you have any questions about this Privacy Policy, feel free to reach
             out at:{" "}
             <a href="mailto: serena@blakepsychology.com">
-              "mailto: serena@blakepsychology.com
+              "serena@blakepsychology.com
               
             </a>
           </p>
