@@ -1,49 +1,54 @@
 body {
-  background-color: rgb(234, 233, 232);
-  height: auto;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  background-color: #fefdf8;
 }
 
+/* HEADER with logo */
 .header {
-  top: 20px;
-  left: 20px;
-  z-index: 50;
-  padding: 1px;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fefdf8;
+  margin-top: 1rem;
 }
 
 .logo {
-  height: 70px;
+  height: 100px;
   width: auto;
-  border-radius: 8px;
-  background: transparent;
-  box-shadow: none;
-  margin-left: 1rem;
-  margin-top: 2rem;/* no need for extra margin if header has padding */
+  transition: all 0.4s ease-in-out;
+  
+
 }
-/* Hero section */
+
+/* HERO section (video below header) */
 .hero-section {
   position: relative;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
-  margin: 3rem 3rem 3rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+  padding: 0;
 }
 
-/* Video background */
+/* VIDEO fills the section */
 .hero-video-bg {
+  
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   object-fit: cover;
   z-index: 1;
 }
 
-/* Content overlay */
+/* Text content on top */
 .hero-content {
   position: relative;
   z-index: 2;
@@ -53,14 +58,12 @@ body {
   padding: 2rem;
 }
 
-/* Headline */
 .hero-content h1 {
   font-size: 2.8rem;
   font-weight: 800;
   margin-bottom: 1rem;
 }
 
-/* Paragraph */
 .hero-content p {
   font-size: 1.4rem;
   font-weight: 300;
@@ -69,7 +72,6 @@ body {
   color: #ffffff;
 }
 
-/* Button styling */
 .consult-button {
   background-color: #3b4f60;
   color: #fff;
@@ -87,31 +89,4 @@ body {
 .consult-button:hover {
   background-color: #f0f0f0;
   color: #000000;
-}
-
-/* ANIMATION CLASSES */
-.fade-in {
-  opacity: 0;
-  animation: fadeInUp 1.2s ease-out forwards;
-}
-
-.delay-1 {
-  animation-delay: 0.3s;
-}
-.delay-2 {
-  animation-delay: 0.6s;
-}
-.delay-3 {
-  animation-delay: 0.9s;
-}
-
-@keyframes fadeInUp {
-  0% {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }

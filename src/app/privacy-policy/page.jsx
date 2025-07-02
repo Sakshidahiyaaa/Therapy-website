@@ -5,10 +5,9 @@ const PrivacyPolicy = () => {
   return (
     <div className="policy-wrapper">
       <div className="main-content">
-        {/* Left Side - Privacy Policy */}
+        {/* Left Section */}
         <div className="left">
           <h1>Privacy Policy</h1>
-              
           <p>
             Your privacy is important to us. This policy outlines how your personal
             information is collected, used, and protected.
@@ -37,13 +36,14 @@ const PrivacyPolicy = () => {
           <p>
             If you have any questions about this Privacy Policy, feel free to reach
             out at:{" "}
-            <a href="mailto:jennifer@drjenniferhahm.com">
-              jennifer@drjenniferhahm.com
+            <a href="mailto: serena@blakepsychology.com">
+              "mailto: serena@blakepsychology.com
+              
             </a>
           </p>
         </div>
 
-        {/* Right Side - Website Visitor Section */}
+        {/* Right Section */}
         <div className="right">
           <h2>For Website Visitors</h2>
           <p>
@@ -92,7 +92,7 @@ const PrivacyPolicy = () => {
         </div>
       </div>
 
-      {/* Styling */}
+     
       <style>{`
         .policy-wrapper {
           background-color: #fefdf8;
@@ -109,7 +109,7 @@ const PrivacyPolicy = () => {
 
         .left, .right {
           flex: 1;
-          background-color:trabsprent;
+          background-color: #ffffff; /* ✅ FIXED: was "trabsprent" */
           padding: 2rem;
           border-radius: 12px;
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);

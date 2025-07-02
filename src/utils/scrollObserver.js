@@ -3,7 +3,7 @@ export const observeFadeIn = () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("visible");
-        obs.unobserve(entry.target); // once visible, stop observing
+        obs.unobserve(entry.target); 
       }
     });
   }, { threshold: 0.2 });

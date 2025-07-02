@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import AOSInit from "../component/AOSInit"; // ✅ This is fine
+import AOSInit from "../component/AOSInit"; 
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

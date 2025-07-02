@@ -1,25 +1,22 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import "./About.css";
-import { observeFadeIn } from "../utils/scrollObserver"; // 📌 Adjust path if needed
 
 const About = () => {
-  useEffect(() => {
-    observeFadeIn(); // ✅ Trigger scroll-based animation
-  }, []);
-
   return (
     <section className="about-section" id="about">
-      <h2 className="about-heading fade-in">About Dr. Serena Blake</h2>
+      <h2 className="about-heading" data-aos="fade-up" data-aos-duration="800">
+        About Dr. Serena Blake
+      </h2>
 
-      <div className="about-container fade-in">
+      <div className="about-container" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
         {/* Image */}
-        <div className="about-image-container fade-in">
+        <div className="about-image-container" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000">
           <img src="/dr1.webp" alt="Dr. Serena Blake" className="about-image" />
         </div>
 
         {/* Text */}
-        <div className="about-text-container fade-in">
+        <div className="about-text-container" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
           <p className="about-text">
             Dr. Serena Blake, PsyD, is a compassionate and experienced clinical psychologist based in Los Angeles, CA.
             With over 8 years of practice and 500+ successful sessions, she is known for her empathetic approach and
@@ -55,7 +52,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="about-finishing-line"></div>
+      <div className="about-finishing-line" data-aos="fade-up" data-aos-delay="800"></div>
     </section>
   );
 };

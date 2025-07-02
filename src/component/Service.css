@@ -8,13 +8,7 @@
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 20px;
-}
-
-.services-intro p {
-  max-width: 800px;
-  margin: 0 auto 30px auto;
-  font-size: 1rem;
-  color: #333;
+  color: #222;
 }
 
 .services-intro hr {
@@ -27,6 +21,7 @@
 .services-heading h3 {
   font-size: 1.8rem;
   margin-bottom: 40px;
+  color: #333;
 }
 
 .services-container {
@@ -34,11 +29,21 @@
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
+  margin-bottom: 60px;
 }
 
 .service-card {
   max-width: 300px;
   text-align: center;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 12px;
+
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
 }
 
 .service-image {
@@ -52,15 +57,16 @@
 .service-card h4 {
   font-size: 1.2rem;
   margin-bottom: 10px;
+  color: #222;
 }
 
 .service-card p {
   font-size: 0.95rem;
-  color: #333;
+  color: #555;
+  line-height: 1.5;
 }
 
 .rates-section {
-    height: 370px;
   background-color: #8aabad;
   padding: 60px 20px;
   text-align: center;
@@ -73,135 +79,57 @@
 }
 
 .rates-section p {
-  margin-bottom: 1rem; /* Adjust this value if you want more or less space */
+  margin-bottom: 1rem;
   line-height: 1.6;
-  text-align: center;
+  font-size: 1rem;
+  color: #000;
+}
+
+.rates-section a {
+  color: #003366;
+  text-decoration: underline;
 }
 
 .footer-note {
   background-color: #f9f6ee;
-  height: 220px;
-  padding: 30px 10px;
-  width: 100%;
+  padding: 40px 10px;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-note p {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: 500;
   color: #000;
 }
 
+.footer-note p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+}
 
 .quote-section {
-  background-image: url('/qt3.jpg'); /* 🔁 Change to your actual image name */
+  background-image: url('/qt3.jpg');
   background-size: cover;
   background-position: center;
   height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .quote-overlay {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 40px 20px;
+  border-radius: 12px;
   text-align: center;
-  padding: 20px;
-  color: #120e0e;
-  background-color: transparent; /* Optional for better text visibility */
 }
 
 .quote-text {
   font-size: 1.8rem;
   font-family: 'Georgia', serif;
   font-weight: 500;
+  color: #333;
   margin-bottom: 10px;
 }
 
 .quote-author {
   font-size: 1rem;
   color: #555;
-}
-
-/* --- Animations --- */
-
-@keyframes fadeInUp {
-  0% {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes scaleIn {
-  0% {
-    transform: scale(0.85);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-/* Apply to section intro */
-.services-intro {
-  animation: fadeInUp 1s ease forwards;
-  opacity: 0;
-  animation-delay: 0.2s;
-  animation-fill-mode: forwards;
-}
-
-/* Apply to service heading */
-.services-heading {
-  animation: fadeInUp 1s ease forwards;
-  opacity: 0;
-  animation-delay: 0.5s;
-  animation-fill-mode: forwards;
-}
-
-/* Animate each service card */
-.service-card {
-  opacity: 0;
-  animation: scaleIn 0.9s ease forwards;
-}
-
-.service-card:nth-child(1) {
-  animation-delay: 0.6s;
-}
-.service-card:nth-child(2) {
-  animation-delay: 0.8s;
-}
-.service-card:nth-child(3) {
-  animation-delay: 1s;
-}
-
-/* Rates section fade-in */
-.rates-section {
-  animation: fadeInUp 1s ease forwards;
-  opacity: 0;
-  animation-delay: 1.2s;
-  animation-fill-mode: forwards;
-}
-
-/* Footer note animation */
-.footer-note {
-  animation: fadeInUp 1s ease forwards;
-  opacity: 0;
-  animation-delay: 1.4s;
-  animation-fill-mode: forwards;
-}
-
-/* Quote section animation */
-.quote-section {
-  animation: fadeInUp 1s ease forwards;
-  opacity: 0;
-  animation-delay: 1.6s;
-  animation-fill-mode: forwards;
 }

@@ -1,21 +1,15 @@
-
 @import "tailwindcss";
+
 html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,10 +23,10 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
 }
 
-/* 👇 Scroll-triggered animation (global) */
-
+/* Scroll-triggered fade-in effect */
 .fade-in {
   opacity: 0;
   transform: translateY(40px);
@@ -40,6 +34,6 @@ body {
 }
 
 .visible {
-  opacity: 1;
-  transform: translateY(0);
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }

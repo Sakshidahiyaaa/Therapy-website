@@ -3,8 +3,6 @@ import AOSInit from "@/component/AOSInit";
 import Hero from '@/component/Hero';
 import About from '@/component/About';
 import Services from '@/component/Services';
-//import FAQ from '@/component/FAQ';
-//import ContactForm from '@/component/ContactForm';
 import Footer from "@/component/Footer";
 
 export default function Home() {
@@ -14,8 +12,7 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
-     
-      <Footer />
+     <Footer />
     </main>
   );
 }

@@ -5,12 +5,12 @@ import React from "react";
 const GoodFaithEstimate = () => {
   return (
     <div className="gfe-wrapper">
-      {/* Logo at top-left */}
+     
       <div className="gfe-header">
         <img src="/l1.png" alt="Logo" className="gfe-logo" />
       </div>
 
-      {/* Main content */}
+     
       <div className="gfe-content">
         <h1>Good Faith Estimate</h1>
         <p>
