@@ -26,7 +26,7 @@ body {
   line-height: 1.6;
 }
 
-/* Scroll-triggered fade-in effect */
+
 .fade-in {
   opacity: 0;
   transform: translateY(40px);

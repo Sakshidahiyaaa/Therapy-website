@@ -11,12 +11,11 @@ const Hero = () => {
 
   return (
     <>
-      {/* Separate Logo Header */}
+     
       <header className="header">
         <img src="/l3.png" alt="Logo" className="logo"  data-aos="fade-down" data-aos-delay="100"  data-aos-duration="800"      />
       </header>
 
-      {/* Hero Video Section */}
       <section className="hero-section" id="hero">
         <video
           autoPlay

@@ -5,7 +5,7 @@ const PrivacyPolicy = () => {
   return (
     <div className="policy-wrapper">
       <div className="main-content">
-        {/* Left Section */}
+        
         <div className="left">
           <h1>Privacy Policy</h1>
           <p>
@@ -43,7 +43,7 @@ const PrivacyPolicy = () => {
           </p>
         </div>
 
-        {/* Right Section */}
+        
         <div className="right">
           <h2>For Website Visitors</h2>
           <p>
@@ -109,7 +109,7 @@ const PrivacyPolicy = () => {
 
         .left, .right {
           flex: 1;
-          background-color: #ffffff; /* ✅ FIXED: was "trabsprent" */
+          background-color: #ffffff; 
           padding: 2rem;
           border-radius: 12px;
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);

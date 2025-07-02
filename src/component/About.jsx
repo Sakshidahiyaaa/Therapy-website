@@ -10,12 +10,12 @@ const About = () => {
       </h2>
 
       <div className="about-container" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
-        {/* Image */}
+      
         <div className="about-image-container" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000">
           <img src="/dr1.webp" alt="Dr. Serena Blake" className="about-image" />
         </div>
 
-        {/* Text */}
+      
         <div className="about-text-container" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
           <p className="about-text">
             Dr. Serena Blake, PsyD, is a compassionate and experienced clinical psychologist based in Los Angeles, CA.
