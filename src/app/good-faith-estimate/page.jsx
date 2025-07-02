@@ -7,7 +7,7 @@ const GoodFaithEstimate = () => {
     <div className="gfe-wrapper">
      
       <div className="gfe-header">
-        <img src="/l1.png" alt="Logo" className="gfe-logo" />
+        <img src="/l3.png" alt="Logo" className="gfe-logo" />
       </div>
 
      

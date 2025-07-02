@@ -95,7 +95,7 @@ const PrivacyPolicy = () => {
      
       <style>{`
         .policy-wrapper {
-          background-color: #fefdf8;
+          background-color:rgb(207, 202, 161);
           padding: 2rem;
         }
 
@@ -109,10 +109,10 @@ const PrivacyPolicy = () => {
 
         .left, .right {
           flex: 1;
-          background-color: #ffffff; 
+          background-color: transparent;
           padding: 2rem;
           border-radius: 12px;
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+          
         }
 
         h1 {
@@ -137,6 +137,7 @@ const PrivacyPolicy = () => {
           margin-top: 1rem;
           line-height: 1.7;
           font-size: 1.05rem;
+          color:#333;
         }
 
         ul {
@@ -146,7 +147,7 @@ const PrivacyPolicy = () => {
         }
 
         a {
-          color: #0070f3;
+          color:rgb(8, 43, 82);
           text-decoration: underline;
         }
 
