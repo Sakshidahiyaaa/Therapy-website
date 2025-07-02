@@ -104,7 +104,7 @@
 }
 
 .quote-section {
-  background-image: url('/qt3.jpg');
+  background-image: url('/q2.jpg');
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -115,7 +115,7 @@
 }
 
 .quote-overlay {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: transparent;
   padding: 40px 20px;
   border-radius: 12px;
   text-align: center;
@@ -125,7 +125,7 @@
   font-size: 1.8rem;
   font-family: 'Georgia', serif;
   font-weight: 500;
-  color: #333;
+  color: #fbfbfb;
   margin-bottom: 10px;
 }
 
